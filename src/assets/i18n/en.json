@@ -1,0 +1,113 @@
+{
+
+    "language": {
+        "language": "Language",
+        "english": "English",
+        "spanish": "Spanish",
+        "en": "English",
+        "es": "Spanish"
+    },
+    "system": {
+        "systemMsg": "System message",
+        "appName": "Pafys Web",
+        "close": "Close",
+        "cancel": "Cancel",
+        "accept": "Accept",
+        "defaultErrMsg": "There was a problem, please try again. If the problem persist, please contact IT service desk",
+        "confirm": "Confirm",
+        "solict_env": "Request sent successfully",
+        "error_msj_id": "Invalid ID",
+        "msj_date": "Please enter the requested data",
+        "list_element": "List of Elements",
+        "report_not": "Report not available",
+        "report_save": "Report stored correctly",
+        "msg_solic_report": "Do you want to approve this report?",
+        "msg_problem": "There was a problem, please try again",
+        "msg_date_problem": "There was a problem loading the data",
+        "msg_value": "Value Assigning Before",
+        "msg_list_name": "The name of the list already exists",
+        "msg_ list_check": "Please enter the name of the checklist you wish to add",
+        "msg_insp_relaice": "There are no inspections performed",
+        "file_not_disp": "Archivo No Disponible",
+        "msg_error_consulta": "Query Error",
+        "msg_up_date": "Please enter all requested data",
+        "msg_insp_date": "Please set a date range",
+        "msg_seal_charge": "Seals loaded correctly",
+        "msg_seal_date": "Please enter a valid range",
+        "msg_seal_import": "Seals imported successfully",
+        "msg_indpection_listAct": "Activity List",
+        "msg_inspection_activity": "An error was generated when consulting the activities, please try again",
+        "msg_charge_crude": "Load and unload crude",
+        "msg_problen_dow_file": "There was a problem downloading the file",
+        "msg_updating": "Upgrade",
+        "msg_upd_date": "Updated data!.",
+        "msg_activit": "Activities",
+        "report_charge_crud": "Report Load and unload crude",
+        "report_charge_error": "The report could not be generated, verify that the data entered is correct.",
+        "invalid_data": "Invalid data",
+        "record_saved": "The registration has been successful!",
+        "record_deleted": "The record has been deleted",
+        "record_update": "The record has been updated",
+        "question_delete": "Do you want to delete this record?",
+        "question_disable": "Do you want to disabled this record?",
+        "question_logout": "Do you want to log out?",
+        "session_expired": "Your session has expired, please log in again",
+        "connection_problem": "There was a problem with the request, please verify your connection",
+        "SUCCESS": "Success!",
+        "ERROR": "Error",
+        "QUESTION": "Are you sure?",
+        "WARNING": "Warning!",
+        "data_not_found": "Data not found",
+        "bad_request": "Bad request",
+        "unknown_error": "Unknown error",
+        "undefined": "Unknown error",
+        "duplicated_id": "Primary key duplicated",
+        "conflit_reference": "Foreign keys conflict",
+        "model_invalid": "Invalid model",
+        "not_authorized_module": "You are not authorized to access this module",
+        "menu_not_obtained": "Menu not obtained"
+
+
+    },
+    "buttons": {
+        "create": "Create",
+        "edit": "Edit",
+        "delete": "Delete",
+        "update": "Update",
+        "ejecute": "Execution"
+    },
+    "msg_sesion": {
+        "sesion_cad": "Claudicated Session",
+        "msg_cad_sesion": "Your session has claudicated, please log in again"
+    },
+    "header": {
+        "logout": "Log out"
+    },
+
+    "Authentication": {
+        "authRequirement": "Authentication requirement",
+        "authRequirementMsg": "To use this module you must first authenticate",
+        "invalidCredentials": "Invalid credentials",
+        "title": "Welcome",
+        "cc": "Identification",
+        "pass": "Password",
+        "enter": "Enter",
+        "login": "Login",
+        "msg_auth_user": "Error authenticating user",
+        "msg_confr_menu": "Failed to get user menu",
+        "msg_conf_user_pass": "Invalid username and password"
+    },
+    "home": {
+        "mision_title": "Mission",
+        "vision_title": "Vision",
+        "mision": "The Center for Sports Sciences and Physical Culture of the University of Córdoba as an administrative unit seeks to strengthen the teaching, research and extension processes in the region and in the country, through the offer of services, qualification, the updating of the Human Resource in the field of Sports Sciences, Physical Activity and Recreation, which contribute to social development, the improvement of health and quality of life, under a perspective of the current legal framework and the scientific and methodological foundations of the Physical Activity of Sport.",
+        "vision": "The Center for Sports Sciences and Physical Culture of the University of Córdoba by the year 2022 will be recognized as an axis, development pole and model to follow in the implementation of Systematic Programs in the field of Sports, Physical Education,  Physical Activity and Recreation, which reflect viable academic-administrative guidelines as a means of helping the development of the Caribbean region and the country."
+    },
+    "Menu": {
+        "coaches": "Coaches",
+        "players": "Players",
+        "sports": "Sports",
+        "teams": "Teams",
+        "my_profile": "My profile"
+    }
+}

@@ -1,0 +1,213 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~@angular/material/theming';
+@include mat-core();
+$mat-green: ( 50:#e8f5e9, 100:#c8e6c9, 200:#a5d6a7, 300:#81c784, 400:#66bb6a, 500:#4caf50, 600:#43a047, 700:#388e3c, 800:#2a871d, 900:#1b5e20, A100:#b9f6ca, A200:#69f0ae, A400:#00e676, A700:#00c853, contrast: ( 50: $black-87-opacity, 100: $black-87-opacity, 200: $black-87-opacity, 300: $black-87-opacity, 400: $black-87-opacity, 500: white, 600: white, 700: white, 800: $white-87-opacity, 900: $white-87-opacity, A100: $black-87-opacity, A200: white, A400: white, A700: white, ));
+$FrontEndDev-primary: mat-palette($mat-green, 800);
+$FrontEndDev-accent: mat-palette($mat-pink, A200, A100, A400);
+// The warn palette is optional (defaults to red).
+$FrontEndDev-warn: mat-palette($mat-red);
+$FrontEndDev-theme: mat-light-theme(( color: ( primary: $FrontEndDev-primary, accent: $FrontEndDev-accent, warn: $FrontEndDev-warn, )));
+@include angular-material-theme($FrontEndDev-theme);
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, Sans-Serif;
+    background-color: #e4e4e42f;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.c-btn-primary {
+    background-color: #2a871d;
+    color: white;
+}
+
+.c-background-primary {
+    background: #2a871d;
+}
+
+.nav .nav-item .nav-link.active {
+    background-color: #2a871d;
+}
+
+.c-background-gray {
+    background-color: #E6E6E6;
+}
+
+.c-text-primary {
+    color: #2a871d;
+}
+
+.c-text-secondary {
+    color: #2d323e;
+}
+
+.c-background-secondary {
+    background-color: #2d323e;
+}
+
+.ms-r {
+    margin-right: 20px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.pr-40 {
+    padding-right: 40px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.mat-expansion-panel-content>.mat-expansion-panel-body {
+    padding: 0 !important;
+}
+
+.text-muted-custom {
+    font-size: 0.6em;
+    color: grey;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-button-action {
+    width: 90px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* // border: solid 1px gray; */
+    border-radius: 5px;
+    /* // background-color: white; */
+}
+
+.full-w {
+    width: 100%;
+}
+
+.c-button-action:hover {
+    background-color: rgba(0, 0, 0, 0.100);
+}
+
+.cont-header-dialog-ambit {
+    background: #2d323e;
+    position: relative;
+    top: -24px;
+    padding: 5px;
+    left: -24px;
+    width: calc(100% + 48px);
+}
+
+.cont-loading {
+    position: relative;
+    top: -24px;
+    left: -24px;
+    width: calc(100% + 48px);
+}
+
+.c-chip {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    border: solid 2px #2d323e;
+    border-radius: 25px;
+    color: #2d323e;
+    font-weight: bold;
+    padding: 1px 10px 1px 10px;
+    width: fit-content;
+    align-items: center;
+}
+
+.c-tag {
+    font-family: "Titillium Web";
+    color: #fff;
+    transition: all .2s linear;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .24)!important;
+    text-transform: uppercase!important;
+    display: inline-block;
+    padding: 0.4em .5em;
+    font-size: 75%;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.c-shadow {
+    transition: all .2s linear;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .24)!important;
+}
+
+.c-mat-field {
+    // font-size: 14px;
+    // margin-bottom: 7px;
+    width: 100%;
+}

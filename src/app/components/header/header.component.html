@@ -1,0 +1,102 @@
+<div class="cont-header">
+
+    <div class="cont-menu">
+        <button mat-button [matMenuTriggerFor]="menu"> 
+                <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item *ngFor="let menu of sesion.menu" (click)="navigate(menu.route)">
+                <div class="full-w d-flex justify-content-between align-items-center">
+                    {{menu.name | translate}}<i *ngIf="menu.icon!== '' && menu.icon" class="{{menu.icon}}"></i> 
+                </div>
+            </button>
+            <button mat-menu-item (click)="logout()" *ngIf="sesion.IsLoged">{{'header.logout' | translate}} ({{sesion.user.names}}) <mat-icon>exit_to_app</mat-icon> </button>
+            <button mat-menu-item (click)="login()" *ngIf="!sesion.IsLoged">{{'Authentication.enter' | translate}} <mat-icon>exit_to_app</mat-icon> </button>
+        </mat-menu>
+
+        <div class="separator">
+        </div>
+    </div>
+
+    <div class="cont-izquierda">
+        <div class="cont-logo">
+            <img class="img-logo" src="assets/imgs/logo.jpg" alt="Logo PAFYS">
+        </div>
+        <div class="cont-menu-user cont-options" *ngFor="let menu of sesion.menu">
+            <div class="separator">
+            </div>
+            <button mat-button (click)="navigate(menu.route)" class="user-button {{menu.route === this.routerSelect?'c-text-primary':''}}">
+                {{menu.name | translate}}
+                <i *ngIf="menu.icon!== '' && menu.icon" class="{{menu.icon}}"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="cont-rigth">
+        <div class="cont-options">
+
+            <!-- USER INFO -->
+            <div class="cont-btn-user" *ngIf="sesion.IsLoged" style="height: 100%;">
+                <button mat-button [matMenuTriggerFor]="usermenu" class="user-button">
+                    <div  class="cont-user">
+                        <img class="rounded-circle" style="height: 40px;margin-right: 5px;" src="assets/images/profile.jpg">
+                        <span class="username mr-12"  fxHide fxShow.gt-sm>{{sesion.user.names}}</span>
+                        <mat-icon class="s-16" fxHide.xs style="margin-bottom: 2px;">keyboard_arrow_down</mat-icon>
+                    </div>
+                </button>
+                <mat-menu #usermenu="matMenu" [overlapTrigger]="false">
+                    <button mat-menu-item (click)="logout()">
+                        <mat-icon>exit_to_app</mat-icon>
+                        <span>{{ 'header.logout'  | translate }}</span>
+                    </button>
+                </mat-menu>
+            </div>
+            <div class="separator">
+            </div>
+            <!-- LOGIN BUTTON -->
+            <button mat-button mat-raised-button color="primary" *ngIf="!sesion.IsLoged" (click)="login()">{{'Authentication.enter' | translate}}</button>
+
+        </div>
+
+        <!-- LANG SETTINGS -->
+        <div class="toolbar-right" align="right">
+            <div class="btn-lang-full">
+                <button mat-button [matMenuTriggerFor]="languageMenu">
+                        <div fxLayout="row" fxLayoutAlign="center center" class="language-botton">
+                            <img class="flag mr-8" [src]="'assets/images/flags/'+lang+'.png'">
+                            <span class="iso" style="margin-left: 5px; margin-top: 2px;">{{'language.'+lang | translate}}</span>
+                            <mat-icon>arrow_drop_down</mat-icon>
+                        </div>
+                </button>
+            </div>
+            <div class="btn-lang-min">
+                <button mat-button [matMenuTriggerFor]="languageMenu">
+                        <div  class="language-botton">
+                            <img class="flag mr-8" [src]="'assets/images/flags/'+lang+'.png'">
+                            <!-- <span class="iso" style="margin-left: 5px; margin-top: 2px;">{{'language.'+lang | translate}}</span> -->
+                            <mat-icon>arrow_drop_down</mat-icon>
+                        </div>
+                </button>
+            </div>
+
+            <div class="mr-5">
+                <mat-menu #languageMenu="matMenu" [overlapTrigger]="false">
+                    <button mat-menu-item (click)="toogleLanguage('es')">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <img class="flag mr-16" [src]="'assets/images/flags/es.png'">
+                                <span class="iso" style="margin-left: 5px;">{{ 'language.spanish' | translate }}</span>
+                            </div>
+                        </button>
+
+                    <button mat-menu-item (click)="toogleLanguage('en')">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <img class="flag mr-16" [src]="'assets/images/flags/en.png'">
+                                <span class="iso" style="margin-left: 5px;">{{ 'language.english' | translate }}</span>
+                            </div>
+                        </button>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+
+</div>

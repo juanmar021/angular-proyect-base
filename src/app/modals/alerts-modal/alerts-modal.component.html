@@ -1,0 +1,33 @@
+<div class="modal-dialog card" role="document">
+    <div class="modal-content">
+        <div class="modal-header card-header">
+            <h5 class="modal-title" id="ModalLiveLabel">{{ 'System.systemMsg' | translate}}</h5>
+        </div>
+        <div class="cont-main-dialog">
+
+
+            <img src="../../assets/images/{{model.type}}.png" alt="dialog_img" />
+
+            <span class="mat-headline pt-2">{{'System.'+model.type | translate }}</span>
+
+            <span class="mat-subheading-2 text-center">{{model.content | translate }}</span>
+
+            <!-- <p class="h6">{{model.content}}</p> -->
+        </div>
+
+        <div class="d-flex justify-content-center" style="padding-bottom: 20px;" *ngIf="model.type!=='QUESTION'">
+            <button type="button" class="btn btn-primary " (click)="close('ModalLive');" data-dismiss="modal">{{ 'System.close' | translate}}</button>
+        </div>
+
+        <div class="modal-footer" *ngIf="model.type==='QUESTION'">
+            <div class="row full-w pl-3 pr-3">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-block bg-danger modal-close text-white mb-2" (click)="result(false);" data-dismiss="modal">{{'System.cancel' | translate}}</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-block bg-success modal-close text-white mb-2" (click)="result(true);" data-dismiss="modal">{{'System.accept' | translate}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

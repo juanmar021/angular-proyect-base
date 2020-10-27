@@ -1,0 +1,43 @@
+<div class="cont-login animated fadeIn fast">
+
+    <mat-card class="card">
+
+        <div class="cont-credenciales">
+
+            <div class="cont-img">
+                <img src="assets/imgs/logo.jpg" alt="">
+            </div>
+
+            <div class="cont-bienvenido">
+                <span> <strong>{{'Authentication.title' | translate}}</strong> </span>
+            </div>
+
+            <div class="cont-form">
+                <form name="loginForm" #f="ngForm" novalidate class="mt-8" (ngSubmit)="onSubmit()" [formGroup]="form">
+
+                    <mat-form-field class="c-mat-field" appearance="outline">
+                        <mat-label>{{'Authentication.cc' | translate}}</mat-label>
+                        <input formControlName="cc" matInput name="cedula" type="number" placeholder="{{'Authentication.cc' | translate}}" required>
+                        <mat-error *ngIf="form.invalid">{{'System.invalid_data' | translate}} </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="c-mat-field" appearance="outline">
+                        <mat-label>{{'Authentication.pass' | translate}}</mat-label>
+                        <input formControlName="pass" matInput name="password" type="password" placeholder="{{'Authentication.pass' | translate}}" required>
+                        <mat-error *ngIf="form.invalid">{{'System.invalid_data' | translate}} </mat-error>
+                        <mat-icon matSuffix>vpn_key</mat-icon>
+                    </mat-form-field>
+
+                    <div class="d-flex justify-content-end">
+                        <div style="width: 50%;">
+                            <button mat-raised-button class="c-btn-primary btn-block"> {{'Authentication.enter' | translate}} </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </mat-card>
+
+</div>

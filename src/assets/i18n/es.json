@@ -1,0 +1,92 @@
+{
+    "language": {
+        "language": "Idioma",
+        "english": "Inglés",
+        "spanish": "Español",
+        "en": "Inglés",
+        "es": "Español"
+    },
+    "System": {
+        "systemMsg": "Mensaje del sistema",
+        "appName": "Paffys Web",
+        "close": "Cerrar",
+        "accept": "Aceptar",
+        "cancel": "Cancelar",
+        "defaultErrMsg": "Ocurrió un problema, por favor intenta de nuevo. Si el problema persiste, comunícate con soporte",
+        "confirm": "Confirmación",
+        "error_msj_id": "Identificación inválida",
+        "msg_problem": "Ocurrió un problema, por favor intenta de nuevo",
+        "msg_date_problem": "Ocurrió un problema cargando los datos",
+        "msg_error_consulta": "Error en la consulta",
+        "msg_up_date": "Por favor ingresa todos los datos solicitados",
+        "msg_updating": "Actualización",
+        "msg_upd_date": "Datos actualizados!.",
+        "msg_activit": "Actividades",
+        "invalid_data": "Datos invalidos",
+        "record_saved": "Registro guardado",
+        "record_deleted": "Registro eliminado",
+        "record_updated": "Registro actualizado",
+        "question_delete": "¿Desea eliminar este registro?",
+        "question_disable": "¿Desea deshabilitar este registro?",
+        "question_logout": "¿Desea cerrar sesión?",
+        "session_expired": "Su sesión ha finalizado, por favor ingrese nuevamente",
+        "connection_problem": "Ocurrió un problema con la conexión, por favor intenta de nuevo. Si el problema persiste, comunícate con soporte",
+        "SUCCESS": "Éxito",
+        "ERROR": "Error",
+        "QUESTION": "¿Está seguro?",
+        "WARNING": "!Advertencia!",
+        "data_not_found": "Datos no encontrados",
+        "bad_request": "Error en la petición",
+        "unknown_error": "Error desconocido",
+        "undefined": "Error desconocido",
+        "duplicated_id": "Llave primaria duplicada",
+        "conflit_reference": "Conflicto de llaves foráneas",
+        "model_invalid": "Modelo invalido",
+        "not_authorized_module": "No está autorizado para acceder a este modulo",
+        "menu_not_obtained": "No se pudo optener el menú"
+
+    },
+    "buttons": {
+        "create": "Crear",
+        "edit": "Editar",
+        "delete": "Eliminar",
+        "update": "Actualizar",
+        "ejecute": "Ejecución"
+    },
+    "msg_sesion": {
+        "sesion_cad": "Sesión claudicada",
+        "msg_cad_sesion": "Tu sesión ha claudicado, por favor inicia sesión de nuevo"
+    },
+    "header": {
+        "logout": "Cerrar sesión"
+    },
+    "Authentication": {
+        "authRequirement": "Autenticación requerida",
+        "authRequirementMsg": "Para hacer uso de este módulo se debe autenticar previamente",
+        "invalidCredentials": "Credenciales inválidas",
+        "title": "Bienvenido",
+        "descripcion_title": "Sistema de operaciones SGS",
+        "msj_cred": "Utiliza tus creadenciales SYS",
+        "cc": "Cédula",
+        "pass": "Contraseña",
+        "enter": "Ingresar",
+        "login": "Iniciar sesión",
+        "msg_auth_user": "Error autenticando usuario",
+        "msg_confr_menu": "No se logró obtener el menú del usuario",
+        "msg_conf_user_pass": "Usuario y contraseña invalidos"
+    },
+    "home": {
+
+        "mision_title": "Misión",
+        "vision_title": "Visión",
+        "mision": "El Centro de Ciencias del Deporte y la Cultura Física de la Universidad de Córdoba como unidad administrativa busca fortalecer los procesos de docencia, investigación y extensión en la región y en el país, mediante la oferta de servicios, la cualificación, la actualización del Recurso Humano en el ámbito de las Ciencias del Deporte, la Actividad Física y la Recreación, los cuales contribuyen al desarrollo social, el mejoramiento de la salud y la calidad de vida, bajo una  perspectiva del marco legal vigente y los fundamentos científicos y metodológicos de la Actividad Física del Deporte.",
+        "vision": "El Centro de Ciencias del Deporte y la Cultura Física de la Universidad de Córdoba para el año 2022 será reconocido como eje, polo de desarrollo y modelo a seguir en la implementación de Programas Sistemáticos en materia de Deporte, Educación Física, Actividad Física y la Recreación, los cuales reflejan unos lineamientos académico-administrativos viables como medio de ayuda al desarrollo de la región caribe y el país."
+    },
+    "Menu": {
+        "coaches": "Entrenadores",
+        "players": "Deportistas",
+        "sports": "Deportes",
+        "teams": "Equipos",
+        "my_profile": "Mi perfil"
+    }
+}
